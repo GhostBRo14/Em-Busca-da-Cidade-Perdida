@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em Busca da Cidade Perdida</title>
+</head>
+<body>
+    <main>
+        <!-- Passo 0 - Descoberta da Carta Ancestral -->
+        <div class="passo ativo" id="passo-0">
+            <img src="imagens/Carta antiga encontrada na biblioteca.jpg" alt="Carta antiga encontrada na biblioteca">
+            <p>Durante uma pesquisa na biblioteca da escola, você encontra uma carta antiga escondida dentro de um livro empoeirado. A carta descreve uma cidade perdida, repleta de tesouros e mistérios, e revela que as pistas para encontrá-la estão espalhadas por vários locais ao redor do mundo. Onde você decide começar sua jornada?</p>
+            <button class="btn-proximo" data-proximo="1">Iniciar a Exploração no Rio de Janeiro</button>
+            <button class="btn-proximo" data-proximo="2">Investigar as Trilhas de Pernambuco</button>
+        </div>
+
+        <!-- Passo 1 - Iniciar a Exploração no Rio de Janeiro -->
+        <div class="passo" id="passo-1">
+            <img src="imagens/Vista do Pico da Tijuca.jpg" alt="Vista do Pico da Tijuca">
+            <p>Sua jornada começa no vibrante Rio de Janeiro. Você decide escalar o Pico da Tijuca, onde, ao amanhecer, você encontra uma antiga inscrição esculpida em pedra. A inscrição indica que a próxima pista está escondida na imensa Floresta Amazônica.</p>
+            <button class="btn-proximo" data-proximo="3">Buscar Detalhes no Pico da Tijuca</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e Retornar à Segurança</button>
+        </div>
+
+        <!-- Passo 2 - Investigar as Trilhas de Pernambuco -->
+        <div class="passo" id="passo-2">
+            <img src="imagens/Biblioteca antiga em Pernambuco.jpg" alt="Biblioteca antiga em Pernambuco">
+            <p>Chegando a uma fazenda histórica em Pernambuco, você encontra uma biblioteca repleta de livros e mapas antigos. Após uma busca minuciosa, você descobre um diário com anotações sobre a cidade perdida. O diário menciona um templo oculto no Rio de Janeiro como próximo destino.</p>
+            <button class="btn-proximo" data-proximo="5">Explorar a Biblioteca da Fazenda em Detalhes</button>
+            <button class="btn-proximo" data-proximo="6">Investigar os Arredores da Fazenda</button>
+        </div>
+
+        <!-- Passo 3 - Buscar Detalhes no Pico da Tijuca -->
+        <div class="passo" id="passo-3">
+            <img src="imagens/Inscrição no Pico da Tijuca.jpg" alt="Inscrição no Pico da Tijuca">
+            <p>No topo do Pico da Tijuca, você encontra um mapa antigo coberto por musgo. O mapa revela que a próxima pista está localizada no coração da Floresta Amazônica, e você precisa encontrar um rio que se bifurca para seguir em frente. Além disso, você encontra um baú com itens úteis para a jornada.</p>
+            <button class="btn-proximo" data-proximo="7">Partir para a Floresta Amazônica</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e Retornar ao Início</button>
+        </div>
+
+        <!-- Passo 4 - Desistir e Retornar à Segurança -->
+        <div class="passo" id="passo-4">
+            <img src="imagens/Retorno para casa e desistência da aventura.jpg" alt="Retorno para casa e desistência da aventura">
+            <p>Você decide que a busca pela cidade perdida não é para você e opta por voltar para casa. O retorno é tranquilo, e você reflete sobre a aventura que poderia ter sido. Sua jornada termina aqui.</p>
+        </div>
+
+        <!-- Passo 5 - Explorar a Biblioteca da Fazenda em Detalhes -->
+        <div class="passo" id="passo-5">
+            <img src="imagens/Mapa antigo encontrado na biblioteca.jpg" alt="Mapa antigo encontrado na biblioteca">
+            <p>Você passa horas vasculhando a biblioteca da fazenda em Pernambuco e encontra um mapa detalhado do Rio de Janeiro. O mapa revela a localização de um antigo templo no topo do Pico da Tijuca, além de sugerir a necessidade de alguns itens essenciais para a próxima etapa.</p>
+            <button class="btn-proximo" data-proximo="1">Retornar ao Rio de Janeiro com Novos Dados</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e Encerrar a Jornada</button>
+        </div>
+
+        <!-- Passo 6 - Investigar os Arredores da Fazenda -->
+        <div class="passo" id="passo-6">
+            <img src="imagens/Caverna escondida nos arredores da fazenda.jpg" alt="Caverna escondida nos arredores da fazenda">
+            <p>Explorando os arredores da fazenda, você encontra uma trilha escondida que leva a uma caverna misteriosa. Dentro da caverna, inscrições antigas falam sobre um caminho secreto para a cidade perdida, sugerindo que a próxima pista está escondida em uma caverna no Rio de Janeiro, com uma entrada camuflada pela vegetação.</p>
+            <button class="btn-proximo" data-proximo="8">Entrar na Caverna Secreta</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e Voltar para Casa</button>
+        </div>
+
+        <!-- Passo 7 - Partir para a Floresta Amazônica -->
+        <div class="passo" id="passo-7">
+            <img src="imagens/Floresta Amazônica e rio bifurcado.jpg" alt="Floresta Amazônica e rio bifurcado">
+            <p>Você chega à vasta e misteriosa Floresta Amazônica. Após uma longa e desafiadora caminhada, você encontra um rio que se bifurca. O mapa encontrado no Pico da Tijuca indica que você deve escolher com cuidado o caminho a seguir.</p>
+            <button class="btn-proximo" data-proximo="10">Seguir o Curso do Rio à Esquerda</button>
+            <button class="btn-proximo" data-proximo="11">Seguir o Curso do Rio à Direita</button>
+        </div>
+
+        <!-- Passo 8 - Entrar na Caverna Secreta -->
+        <div class="passo" id="passo-8">
+            <img src="imagens/Explorando a caverna secreta.jpg" alt="Explorando a caverna secreta">
+            <p>Dentro da caverna, a escuridão é intensa e você precisa usar uma lanterna para explorar. À medida que avança, encontra uma passagem secreta que leva a uma câmara oculta. Nessa câmara, você descobre um conjunto de mapas e artefatos antigos que revelam a localização da cidade perdida e uma série de enigmas a serem resolvidos.</p>
+            <button class="btn-proximo" data-proximo="12">Explorar a Câmara Oculta em Detalhes</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e Retornar à Superfície</button>
+        </div>
+
+        <!-- Passo 9 - Seguir o Curso do Rio à Esquerda -->
+        <div class="passo" id="passo-9">
+            <img src="imagens/Cachoeira escondida com inscrições antigas.jpg" alt="Cachoeira escondida com inscrições antigas">
+            <p>Seguindo o curso do rio à esquerda, você chega a uma cachoeira escondida com inscrições antigas que revelam a entrada da cidade perdida.</p>
+            <button class="btn-proximo" data-proximo="13">Explorar a Cidade Perdida</button>
+        </div>
+
+        <!-- Passo 10 - Seguir o Curso do Rio à Direita -->
+        <div class="passo" id="passo-10">
+            <img src="imagens/Área pantanosa sem sinais da cidade perdida.jpg" alt="Área pantanosa sem sinais da cidade perdida">
+            <p>Seguir o curso do rio à direita leva você a uma área pantanosa. Apesar das belas vistas, não há sinais da cidade perdida aqui.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar e Tentar o Outro Rio</button>
+        </div>
+
+        <!-- Passo 11 - Explorar a Cidade Perdida -->
+        <div class="passo" id="passo-11">
+            <img src="imagens/Cidade perdida no Amazonas.jpg" alt="Cidade perdida no Amazonas">
+            <p>Dentro da cidade perdida, você descobre tesouros inimagináveis e decide se dedicar a estudar e preservar este lugar.</p>
+        </div>
+
+        <!-- Passo 12 - Explorar a Câmara Oculta em Detalhes / Retornar e Tentar o Outro Rio -->
+        <div class="passo" id="passo-12">
+            <img src="imagens/Cachoeira e inscrições ocultas.jpg" alt="Cachoeira e inscrições ocultas">
+            <p>Explorando a câmara oculta ou retornando para explorar o outro rio, você encontra novas pistas que indicam a localização precisa da cidade perdida. Agora, você deve decidir como proceder.</p>
+            <button class="btn-proximo" data-proximo="13">Explorar Mais Profundamente a Cidade Perdida</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e Voltar para Casa</button>
+        </div>
+
+        <!-- Passo 13 - Explorar Mais Profundamente a Cidade Perdida -->
+        <div class="passo" id="passo-13">
+            <img src="imagens/Explorando mais a cidade perdida.jpg" alt="Explorando mais a cidade perdida">
+            <p>Enquanto explora a cidade perdida, você encontra novas pistas que indicam que ainda há mais a descobrir. Os mapas e artefatos encontrados levam a locais misteriosos e desafios adicionais.</p>
+            <button class="btn-proximo" data-proximo="14">Explorar Mais Profundamente a Cidade Perdida</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e Voltar para Casa</button>
+        </div>
+
+        <!-- Passo 14 - Desistir e Voltar para Casa -->
+        <div class="passo" id="passo-14">
+            <img src="imagens/casa.jpg" alt="casa">
+            <p>Você decide que a jornada é muito arriscada e volta para casa. Embora a aventura tenha terminado, você sempre se perguntará o que teria encontrado se tivesse continuado.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Step Container */
+.passo {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.passo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.passo p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-proximo {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.btn-proximo:hover {
+    background-color: #0056b3;
+}
+
+/* Active Step */
+.ativo {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .passo p {
+        font-size: 16px;
+    }
+
+    .btn-proximo {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
